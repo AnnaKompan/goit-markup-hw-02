@@ -17,7 +17,8 @@ body {
   --address-color: rgba(255, 255, 255, 0.6);
   --border-project-color: #eeeeee;
 }
-/* .visually-hidden {
+
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -28,12 +29,12 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-} */
+}
 
 .header-nav .link.current {
   color: var(--active-link-color);
 }
-.header-logo {
+.main-logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -47,12 +48,16 @@ body {
   list-style: none;
 }
 
-.link {
+.link,
+.logo-link,
+.main-logo {
   text-decoration: none;
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.logo-link:hover,
+.logo-link:focus {
   color: var(--active-link-color);
 }
 
@@ -62,6 +67,10 @@ body {
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
   color: var(--main-color);
+}
+
+.header-nav .link.current {
+  color: var(--active-link-color);
 }
 
 .contact {
@@ -110,14 +119,6 @@ body {
   background-color: var(--primary-bg-color);
 }
 /* ------------------------ABOUT--------------------------------- */
-.about {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-}
 .about-title {
   font-weight: 700;
   font-size: 14px;
